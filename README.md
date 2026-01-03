@@ -1,32 +1,40 @@
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true)
-# Hi, I'm Aniket 👋
+# Hi, I'm Aniket Sahu 👋
 
-🎓 B.Tech Student | 💻 Python Developer | 📊 DSA Enthusiast  
-
----
-
-## 🧠 About Me
-- Learning Data Structures & Algorithms using Python
-- Interested in Backend Development & AI
-- Consistent problem solver on LeetCode
+🎓 B.Tech Student | 🐍 Python Developer | 🧠 DSA Learner  
 
 ---
 
-## 🚀 Skills
+## 👨‍💻 About Me
+- Currently learning Data Structures & Algorithms using Python
+- Interested in Backend Development and AI-based systems
+- Focused on writing clean, readable, and logical code
+- Actively practicing problems on LeetCode
+
+---
+
+## 🛠️ Skills
 - Python
+- Data Structures & Algorithms
 - Git & GitHub
 - Basic SQL
 - Problem Solving
 
 ---
 
-## 📌 Featured Projects
-- 🔍 Mini Search Engine (Python)
-- 🎮 Guess The Number Game
-- 🤖 AI Agent (in progress)
+## 📂 Featured Work
+- 📘 DSA Practice in Python
+- 🎮 Python Mini Games
+- 🔍 Mini Search Engine (Text-based)
+- 🤖 AI Agent (Learning Phase)
 
 ---
 
-## 📈 GitHub Stats
+## 📊 GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aniketsahu007&show_icons=true&theme=default)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=YOUR_USERNAME)
+![GitHub Streak](https://streak-stats.demolab.com?user=aniketsahu007)
+
+---
+
+## 📫 Connect With Me
+- GitHub: https://github.com/aniketsahu007
