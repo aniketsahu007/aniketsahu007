@@ -21,9 +21,10 @@
 ---
 
 ## 📂 Featured Work
-- 🎮 Python Mini Games
-- 🔍 Mini Search Engine (Text-based)
-- 🤖 AI Agent (Learning Phase)
+-  Python Mini Games
+-  Mini Search Engine (Text-based)
+-  AI Agent (Learning Phase)
+-  Human Emotion Detector Using Webcam
 
 ---
 
