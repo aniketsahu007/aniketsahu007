@@ -14,6 +14,7 @@
 
 ## 🛠️ Skills
 - Python
+- JavaScript
 - Full-stack web development
 - Git & GitHub
 - Problem Solving
