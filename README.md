@@ -9,7 +9,7 @@
 - Interested in AI-based systems
 - Focused on writing clean, readable, and logical code
 - Actively practicing problems on LeetCode
-- Actively participating in contests on leetcode
+- Actively participating in contests on LeetCode
 
 ---
 
@@ -35,4 +35,5 @@
 ## 📫 Connect With Me
 - GitHub: https://github.com/aniketsahu007
 - linkedin: www.linkedin.com/in/aniket-sahu-b1ba44362
-- leetcode: 8awkk6cxeo         
+- leetcode: 8awkk6cxeo
+- Instagram: https://www.instagram.com/the__anikettt/
