@@ -29,12 +29,6 @@
 -  AI Agent (Learning Phase)
 -  Human Emotion Detector Using Webcam
 
----
-
-## 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aniketsahu007&show_icons=true&theme=default)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=aniketsahu007)
 
 ---
 
