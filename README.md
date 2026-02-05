@@ -1,6 +1,6 @@
 # Hi, I'm Aniket Sahu 👋
 
-🎓 B.Tech Student | 🐍 Python Developer   
+🎓 B.Tech Student | 🐍 Python Developer  | 🍵Java Developer
 
 ---
 
