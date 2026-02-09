@@ -3,7 +3,7 @@
 🎓 B.Tech Student | 🐍 Python Developer  | 🍵Java Developer
 
 ---
-about me
+
 ## 👨‍💻 About Me
 - Currently learning AI and ML
 - Interested in AI-based systems
