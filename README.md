@@ -48,15 +48,6 @@ Focus   : Intelligent systems that solve real problems
 ![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
 ![Java](https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![C++](https://img.shields.io/badge/C++-0d1117?style=for-the-badge&logo=cplusplus&logoColor=00599C)
-
-**AI / ML**
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-0d1117?style=for-the-badge&logo=tensorflow&logoColor=FF6F00)
-![OpenCV](https://img.shields.io/badge/OpenCV-0d1117?style=for-the-badge&logo=opencv&logoColor=5C3EE8)
-![Jupyter](https://img.shields.io/badge/Jupyter-0d1117?style=for-the-badge&logo=jupyter&logoColor=F37626)
-![Numpy](https://img.shields.io/badge/NumPy-0d1117?style=for-the-badge&logo=numpy&logoColor=013243)
-![Pandas](https://img.shields.io/badge/Pandas-0d1117?style=for-the-badge&logo=pandas&logoColor=150458)
 
 **Web & Tools**
 
@@ -65,57 +56,8 @@ Focus   : Intelligent systems that solve real problems
 ![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=339933)
 ![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
 ![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=FCC624)
-![VS Code](https://img.shields.io/badge/VS%20Code-0d1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
-![MySQL](https://img.shields.io/badge/MySQL-0d1117?style=for-the-badge&logo=mysql&logoColor=4479A1)
 
 </div>
-
----
-
-## 🧪 Projects I'm Proud Of
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎭 Facial Emotion Detection
-> Real-time **emotion recognition** from webcam feed using deep learning and OpenCV.
-
-🔧 `Python` `OpenCV` `Jupyter` `CNN`  
-🔗 [View Repo →](https://github.com/aniketsahu007/facial_emotion_detection_using_webcam)
-
-</td>
-<td width="50%">
-
-### 🔍 Mini Search Engine
-> A text-based **search engine** with indexing, ranking, and query matching — built from scratch.
-
-🔧 `Python` `Data Structures` `Algorithms`  
-📁 *Private / Coming Soon*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🤖 AI Agent *(In Progress)*
-> An **autonomous agent** capable of reasoning and completing tasks step by step using LLM APIs.
-
-🔧 `Python` `LLM APIs` `Agent Design`  
-🚧 *Active Development*
-
-</td>
-<td width="50%">
-
-### 🎮 Guess the Number
-> 2-player Python game with **score tracking**, attempt logging, and winner detection.
-
-🔧 `Python` `Game Logic`  
-🔗 [View Repo →](https://github.com/aniketsahu007/Guess-the-number-game)
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -186,22 +128,6 @@ jobs:
 
 ---
 
-## 🏆 LeetCode
-
-<div align="center">
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/u/8awkk6cxeo/)
-
-| Category | Status |
-|----------|--------|
-| 🔄 Daily Problems | Active |
-| ⚔️ Weekly Contests | Competing |
-| 📚 Focus Areas | Arrays, DP, Trees, Graphs |
-
-</div>
-
----
-
 ## 💬 My Dev Mantra
 
 <div align="center">
@@ -220,7 +146,6 @@ jobs:
 
 [![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniketsahu007)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/aniket-sahu-b1ba44362)
-[![LeetCode](https://img.shields.io/badge/LeetCode-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/u/8awkk6cxeo/)
 [![Instagram](https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=E4405F)](https://www.instagram.com/the__anikettt/)
 
 </div>
