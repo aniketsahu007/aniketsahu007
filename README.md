@@ -81,51 +81,7 @@ Focus   : Intelligent systems that solve real problems
 ## 📈 Contribution Activity
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aniketsahu007&theme=react-dark&bg_color=0d1117&color=6EE7B7&line=6EE7B7&point=ffffff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
----
-
-## 🐍 Watch My Contributions Get Eaten
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aniketsahu007/aniketsahu007/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aniketsahu007/aniketsahu007/output/snake.svg" />
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/aniketsahu007/aniketsahu007/output/snake-dark.svg" />
-</picture>
-
-<details>
-<summary>⚙️ <b>How to enable the snake</b></summary>
-<br/>
-
-1. Go to your `aniketsahu007` repo → **Actions** → **New workflow**
-2. Create `.github/workflows/snake.yml` with this content:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-</details>
-
+ 
 ---
 
 ## 💬 My Dev Mantra
@@ -146,6 +102,7 @@ jobs:
 
 [![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniketsahu007)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/aniket-sahu-b1ba44362)
+[![LeetCode](https://img.shields.io/badge/LeetCode-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/u/8awkk6cxeo/)
 [![Instagram](https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=E4405F)](https://www.instagram.com/the__anikettt/)
 
 </div>
