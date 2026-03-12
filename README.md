@@ -45,9 +45,11 @@ Focus   : Intelligent systems that solve real problems
 
 **Core Languages**
 
+ 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
 ![Java](https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=3178C6)
 
 **Web & Tools**
 
@@ -56,6 +58,7 @@ Focus   : Intelligent systems that solve real problems
 ![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=339933)
 ![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
 ![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=FCC624)
+![VibeCoder](https://img.shields.io/badge/VibeCoder-0d1117?style=for-the-badge&logo=visualstudiocode&logoColor=22c55e)
 
 </div>
 
