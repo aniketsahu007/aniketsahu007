@@ -5,6 +5,13 @@
 </div>
 
 <div align="center">
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=12,20,24&height=200&section=header&text=Aniket%20Sahu&fontSize=75&fontColor=ffffff&fontAlignY=55&desc=Engineering%20Intelligence%2C%20One%20Line%20at%20a%20Time&descAlignY=75&descSize=16&animation=fadeIn" width="100%"/>
+
+</div>
+
+<div align="center">
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=6EE7B7&center=true&vCenter=true&width=650&lines=B.Tech+CSE+(AI+%26+ML)+%E2%80%94+VIT+University+%F0%9F%8E%93;Python+%7C+Java+%7C+JavaScript+Developer;Building+AI+that+sees%2C+thinks+and+acts+%F0%9F%A4%96;Competitive+Coder+%7C+Open+Source+Enthusiast)](https://git.io/typing-svg)
 
@@ -16,26 +23,36 @@
 
 ---
 
-<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="280" />
-
-### `> whoami`
+## `> neofetch`
 
 ```
-Name    : Aniket Sahu
-Role    : AI/ML Student & Developer
-School  : VIT University — B.Tech CSE (AI & ML)
-Status  : Building. Learning. Shipping. 🚀
-Focus   : Intelligent systems that solve real problems
+
+     _.oo.                aniket@github
+    _.u[[/;:,.         -------------------
+   .o888UU[[[/;:-.      OS ..................... VIT University OS (AI/ML Build)
+  oN88888UU[[[/;::-.    Host .................... B.Tech CSE — AI & ML
+ dNMMNN888UU[[[/;:--.   Kernel ................... Python 3.x / Java 17 / Node.js
+ ,MMMMMMN888UU[[/;::-.  Uptime ................... Learning since 2022
+ NNMMMNN888UU[[[/~.o?    IDE ...................... VS Code
+ 8MMMMMMMMUU[[[/o?oo'    Shell .................... bash / zsh
+ 8MMMMMMMMUU[[[o?oo      
+ YMMMMMMMMUU[[[o?oo'     Languages.Programming .... Python, Java, JavaScript, TypeScript
+ `MMMMMMMMUU[[[o?oo      Languages.Web ............ HTML, CSS
+ `MMMMMMMMUU[[[o?o      Tools .................... Git, Linux, Node.js
+  `MMMMMMMMUU[[[o?      
+   `MMMMMMMMUU[[[o      Hobbies.Software ......... Competitive Coding, Open Source
+    `MMMMMMMMUU[[[      Hobbies.Learning ......... AI/ML Research, DSA Grind
+     `MMMMMMMMUU[[      
+      `MMMMMMMMUU[      GitHub Stats
+       `MMMMMMMMUU      Repos ............ see below
+        `MMMMMMMMU      Streak ........... see below
+         `MMMMMMM       
+
 ```
 
-**What drives me:**
-- 🧠 Fascinated by how machines can *think* and *perceive*
-- 🔬 Turning raw research into working projects
-- 🏋️ Daily LeetCode grind — DSA is a gym for the mind
-- 🎯 Writing code that's clean, logical, and purposeful
-- 🤝 Always open to collaborations on meaningful AI projects
-
-<br clear="right"/>
+<div align="center">
+  <sub>🎨 want the classic "photo → ASCII art" look instead of this Linux-mascot style?<br/>send me a headshot and I'll convert it into ASCII for the block above.</sub>
+</div>
 
 ---
 
@@ -45,7 +62,6 @@ Focus   : Intelligent systems that solve real problems
 
 **Core Languages**
 
- 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
 ![Java](https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
@@ -83,7 +99,7 @@ Focus   : Intelligent systems that solve real problems
 ## 📈 Contribution Activity
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aniketsahu007&theme=react-dark&bg_color=0d1117&color=6EE7B7&line=6EE7B7&point=ffffff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
- 
+
 ---
 
 ## 💬 My Dev Mantra
@@ -103,16 +119,5 @@ Focus   : Intelligent systems that solve real problems
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniketsahu007)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/aniket-sahu-b1ba44362)
-[![LeetCode](https://img.shields.io/badge/LeetCode-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/u/8awkk6cxeo/)
-[![Instagram](https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=E4405F)](https://www.instagram.com/the__anikettt/)
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=100&section=footer" width="100%"/>
 
 </div>
