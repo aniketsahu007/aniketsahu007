@@ -2,17 +2,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=12,20,24&height=200&section=header&text=Aniket%20Sahu&fontSize=75&fontColor=ffffff&fontAlignY=55&desc=Engineering%20Intelligence%2C%20One%20Line%20at%20a%20Time&descAlignY=75&descSize=16&animation=fadeIn" width="100%"/>
 
-</div>
-
-<div align="center">
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=12,20,24&height=200&section=header&text=Aniket%20Sahu&fontSize=75&fontColor=ffffff&fontAlignY=55&desc=Engineering%20Intelligence%2C%20One%20Line%20at%20a%20Time&descAlignY=75&descSize=16&animation=fadeIn" width="100%"/>
-
-</div>
-
-<div align="center">
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=6EE7B7&center=true&vCenter=true&width=650&lines=B.Tech+CSE+(AI+%26+ML)+%E2%80%94+VIT+University+%F0%9F%8E%93;Python+%7C+Java+%7C+JavaScript+Developer;Building+AI+that+sees%2C+thinks+and+acts+%F0%9F%A4%96;Competitive+Coder+%7C+Open+Source+Enthusiast)](https://git.io/typing-svg)
 
 <br/>
@@ -26,33 +15,30 @@
 ## `> neofetch`
 
 ```
-
-     _.oo.                aniket@github
-    _.u[[/;:,.         -------------------
-   .o888UU[[[/;:-.      OS ..................... VIT University OS (AI/ML Build)
-  oN88888UU[[[/;::-.    Host .................... B.Tech CSE — AI & ML
- dNMMNN888UU[[[/;:--.   Kernel ................... Python 3.x / Java 17 / Node.js
- ,MMMMMMN888UU[[/;::-.  Uptime ................... Learning since 2022
- NNMMMNN888UU[[[/~.o?    IDE ...................... VS Code
- 8MMMMMMMMUU[[[/o?oo'    Shell .................... bash / zsh
- 8MMMMMMMMUU[[[o?oo      
- YMMMMMMMMUU[[[o?oo'     Languages.Programming .... Python, Java, JavaScript, TypeScript
- `MMMMMMMMUU[[[o?oo      Languages.Web ............ HTML, CSS
- `MMMMMMMMUU[[[o?o      Tools .................... Git, Linux, Node.js
-  `MMMMMMMMUU[[[o?      
-   `MMMMMMMMUU[[[o      Hobbies.Software ......... Competitive Coding, Open Source
-    `MMMMMMMMUU[[[      Hobbies.Learning ......... AI/ML Research, DSA Grind
-     `MMMMMMMMUU[[      
-      `MMMMMMMMUU[      GitHub Stats
-       `MMMMMMMMUU      Repos ............ see below
-        `MMMMMMMMU      Streak ........... see below
-         `MMMMMMM       
-
++++++********#######**####%%%##########******+   aniket@github
+++********#####*+=-::::::.:=*%%%%########*****   -------------------
++*****#####%#*=:.:..::...    =%%%%%%%######***   OS ..................... VIT University (AI & ML Build)
+****#######=:....... .      . =@%%%%%%%######*   Host .................... B.Tech CSE Student
+***#####%#=  ..    .:-----::...#@%%%%%%%%####*   Kernel .................. Python 3.x | Java 17 | Node.js
+*######%#: .. .. .:=*****+*+:..:@@@@@%%%%%%###   Uptime .................. Learning since 2022
+*#####%%+ . ....:=*****++==++.. =@@@@@%%%%%%##   IDE ..................... VS Code
+*####%%%*.... :==--=**=--===*- .*@@@@@@@%%%%%#   Shell ................... bash / zsh
+####%%%%%. . :==--==+*===-++#+.+@@@@@@@@%%%%%#
+###%%%%%@*-.:*+++++*********#*+#@@@@@@@@@%%%%#   Languages.Programming ... Python, Java, JavaScript, TypeScript
+###%%%%%%@%==######++*+*######+#@@@@@@@@@%%%%#   Languages.Web ........... HTML, CSS
+###%%%%%@@@*-**##*+==+==+*###+*@@@@@@@@@@%%%%#   Tools ................... Git, Linux, Node.js
+###%%%%%@@@@*=+**======+=+**+*@@@@@@@@@@@%%%%#
+###%%%%%@@@@@#-+**##***###*=-@@@@@@@@@@@@%%%%#   Hobbies.Coding ........... Competitive Programming, DSA
+###%%%%%%@@@@@#--=++==+++--:*@@@@@@@@@@@%%%%%#   Hobbies.Interests ........ AI/ML Research, Open Source
+####%%%%%%@@@@@+:...  ...-=***@@@@@@@@@@%%%%%#
+*####%%%%%%@@@==++++++++****=-=%@@@@@@%%%%%%##   GitHub
+*#####%%%%%@%- :+*++*******+:-+#%%%@@@%%%%%###   Username ................. aniketsahu007
+***####%%##*-..:=+*+******+:-.=#*+*#*#########
+*******++=*+:.:-=+*******+-.:.=**+=+*++++*****
+++====--=++-..:-=++*****=:.  :*+=+*+++========
+::---==++=. ....-+*+++=-.....==::-==+++====---
+---:-===--.......-+++-...::.:=:--=========----
 ```
-
-<div align="center">
-  <sub>🎨 want the classic "photo → ASCII art" look instead of this Linux-mascot style?<br/>send me a headshot and I'll convert it into ASCII for the block above.</sub>
-</div>
 
 ---
 
@@ -98,7 +84,11 @@
 
 ## 📈 Contribution Activity
 
+<div align="center">
+
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aniketsahu007&theme=react-dark&bg_color=0d1117&color=6EE7B7&line=6EE7B7&point=ffffff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
 
 ---
 
