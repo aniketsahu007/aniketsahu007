@@ -92,6 +92,16 @@
 
 ---
 
+## ♞ Wouldn’t you prefer a good game of chess?
+
+I could really get on BOARD with more games on profiles. I'd definitely CHECK them all out...
+
+You guessed it! You can also play chess thanks to this little gem from [@timburgan](https://github.com/timburgan). Simply click a link to create an issue with your move command, and a GitHub Actions Workflow will take it from there.
+
+- [Play community chess](https://github.com/timburgan/timburgan)
+
+---
+
 ## 💬 My Dev Mantra
 
 <div align="center">
