@@ -12,32 +12,18 @@
 
 ---
 
-## `> neofetch`
+## 👨‍💻 About Me (Python)
 
-```
-+++++********#######**####%%%##########******+   aniket@github
-++********#####*+=-::::::.:=*%%%%########*****   -------------------
-+*****#####%#*=:.:..::...    =%%%%%%%######***   OS ..................... VIT University (AI & ML Build)
-****#######=:....... .      . =@%%%%%%%######*   Host .................... B.Tech CSE Student
-***#####%#=  ..    .:-----::...#@%%%%%%%%####*   Kernel .................. Python 3.x | Java 17 | Node.js
-*######%#: .. .. .:=*****+*+:..:@@@@@%%%%%%###   Uptime .................. Learning since 2022
-*#####%%+ . ....:=*****++==++.. =@@@@@%%%%%%##   IDE ..................... VS Code
-*####%%%*.... :==--=**=--===*- .*@@@@@@@%%%%%#   Shell ................... bash / zsh
-####%%%%%. . :==--==+*===-++#+.+@@@@@@@@%%%%%#
-###%%%%%@*-.:*+++++*********#*+#@@@@@@@@@%%%%#   Languages.Programming ... Python, Java, JavaScript, TypeScript
-###%%%%%%@%==######++*+*######+#@@@@@@@@@%%%%#   Languages.Web ........... HTML, CSS
-###%%%%%@@@*-**##*+==+==+*###+*@@@@@@@@@@%%%%#   Tools ................... Git, Linux, Node.js
-###%%%%%@@@@*=+**======+=+**+*@@@@@@@@@@@%%%%#
-###%%%%%@@@@@#-+**##***###*=-@@@@@@@@@@@@%%%%#   Hobbies.Coding ........... Competitive Programming, DSA
-###%%%%%%@@@@@#--=++==+++--:*@@@@@@@@@@@%%%%%#   Hobbies.Interests ........ AI/ML Research, Open Source
-####%%%%%%@@@@@+:...  ...-=***@@@@@@@@@@%%%%%#
-*####%%%%%%@@@==++++++++****=-=%@@@@@@%%%%%%##   GitHub
-*#####%%%%%@%- :+*++*******+:-+#%%%@@@%%%%%###   Username ................. aniketsahu007
-***####%%##*-..:=+*+******+:-.=#*+*#*#########
-*******++=*+:.:-=+*******+-.:.=**+=+*++++*****
-++====--=++-..:-=++*****=:.  :*+=+*+++========
-::---==++=. ....-+*+++=-.....==::-==+++====---
----:-===--.......-+++-...::.:=:--=========----
+```python
+profile = {
+    "name": "Aniket Sahu",
+    "username": "aniketsahu007",
+    "education": "B.Tech CSE (AI & ML), VIT University",
+    "languages": ["Python", "Java", "JavaScript", "TypeScript"],
+    "web": ["HTML", "CSS", "Node.js"],
+    "tools": ["Git", "Linux", "VS Code"],
+    "interests": ["Competitive Programming", "DSA", "AI/ML Research", "Open Source"]
+}
 ```
 
 ---
@@ -89,6 +75,19 @@
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aniketsahu007&theme=react-dark&bg_color=0d1117&color=6EE7B7&line=6EE7B7&point=ffffff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
+
+---
+
+
+## ♟️ Community Chess
+
+Click to play a move with GitHub Issues + Actions.
+
+[Start a new game](https://github.com/aniketsahu007/aniketsahu007/issues/new?title=chess%7Cnew&body=Just+click+%27Create+new+issue%27.)
+
+<!-- CHESS_START -->
+**Game status:** No active game yet. Start one with the link above.
+<!-- CHESS_END -->
 
 ---
 

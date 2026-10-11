@@ -1,0 +1,256 @@
+name: Chess
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: chess-game
+  cancel-in-progress: false
+
+jobs:
+  move:
+    if: startsWith(github.event.issue.title, 'chess|')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Install gems
+        run: |
+          gem install octokit -v 10.0.0 -N --silent
+          gem install chess -v 0.4.0 -N --silent
+
+      - name: Process chess move
+        env:
+          REPOSITORY: ${{ github.repository }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          ruby <<'RUBY'
+          require 'chess'
+          require 'octokit'
+          require 'fileutils'
+
+          REPO = ENV.fetch('REPOSITORY')
+          OWNER = ENV.fetch('REPO_OWNER')
+          BRANCH = ENV.fetch('DEFAULT_BRANCH')
+          ISSUE_TITLE = ENV.fetch('ISSUE_TITLE').strip
+          ISSUE_NUMBER = ENV.fetch('ISSUE_NUMBER').to_i
+          ISSUE_AUTHOR = ENV.fetch('ISSUE_AUTHOR')
+
+          GAME_DIR = 'chess_games'
+          GAME_FILE = File.join(GAME_DIR, 'chess.pgn')
+          GAME_ID_FILE = File.join(GAME_DIR, 'game_id.txt')
+          LAST_MOVER_FILE = File.join(GAME_DIR, 'last_mover.txt')
+          RECENT_FILE = File.join(GAME_DIR, 'recent_moves.txt')
+          LEADERBOARD_FILE = File.join(GAME_DIR, 'leaderboard.txt')
+
+          client = Octokit::Client.new(access_token: ENV.fetch('GITHUB_TOKEN'))
+
+          def close_with_comment(client, body)
+            client.add_comment(ENV.fetch('REPOSITORY'), ENV.fetch('ISSUE_NUMBER').to_i, body)
+            client.close_issue(ENV.fetch('REPOSITORY'), ENV.fetch('ISSUE_NUMBER').to_i)
+            exit 0
+          end
+
+          def clone_game(game)
+            return Chess::Game.new if game.moves.empty?
+            tmp_file = '/tmp/chess_clone.pgn'
+            File.write(tmp_file, game.pgn.to_s)
+            Chess::Game.load_pgn(tmp_file)
+          end
+
+          cmd = nil
+          move = nil
+          game_id = nil
+
+          if ISSUE_TITLE == 'chess|new'
+            cmd = 'new'
+            game_id = ISSUE_NUMBER
+          elsif (match = ISSUE_TITLE.match(/\Achess\|move\|([a-h][1-8][a-h][1-8])\|([1-9]\d*)\z/))
+            cmd = 'move'
+            move = match[1]
+            game_id = match[2].to_i
+          else
+            close_with_comment(client, "@#{ISSUE_AUTHOR} Invalid chess command. Use `chess|new` or `chess|move|e2e4|<game_id>`.")
+          end
+
+          FileUtils.mkdir_p(GAME_DIR)
+
+          game = Chess::Game.new
+          if cmd == 'move'
+            if File.exist?(GAME_FILE) && !File.read(GAME_FILE).strip.empty?
+              begin
+                tmp = '/tmp/chess_current.pgn'
+                File.write(tmp, File.read(GAME_FILE))
+                game = Chess::Game.load_pgn(tmp)
+              rescue StandardError
+                game = Chess::Game.new
+              end
+            end
+
+            begin
+              game.move(move)
+            rescue Chess::IllegalMoveError
+              close_with_comment(client, "@#{ISSUE_AUTHOR} `#{move}` is not a legal move right now.")
+            end
+
+            File.write(LAST_MOVER_FILE, ISSUE_AUTHOR)
+
+            recent_line = "| #{move[0..1].upcase} to #{move[2..3].upcase} | [@#{ISSUE_AUTHOR}](https://github.com/#{ISSUE_AUTHOR}) |"
+            recent = File.exist?(RECENT_FILE) ? File.readlines(RECENT_FILE, chomp: true).reject(&:empty?) : []
+            File.write(RECENT_FILE, ([recent_line] + recent[0..3]).join("\n") + "\n")
+
+            leaderboard = {}
+            if File.exist?(LEADERBOARD_FILE)
+              File.readlines(LEADERBOARD_FILE, chomp: true).each do |line|
+                if (m = line.match(/\|\s+(\d+)\s+\|\s+\[@([^\]]+)\]/))
+                  leaderboard[m[2]] = m[1].to_i
+                end
+              end
+            end
+            leaderboard[ISSUE_AUTHOR] = leaderboard.fetch(ISSUE_AUTHOR, 0) + 1
+            ranked = leaderboard.sort_by { |_user, count| -count }.first(20)
+            lines = ranked.map { |user, count| "| #{count} | [@#{user}](https://github.com/#{user}) |" }
+            File.write(LEADERBOARD_FILE, lines.join("\n") + "\n")
+          else
+            game = Chess::Game.new
+            File.write(RECENT_FILE, '')
+            File.write(LEADERBOARD_FILE, '')
+            File.write(LAST_MOVER_FILE, '')
+          end
+
+          File.write(GAME_ID_FILE, game_id.to_s)
+          File.write(GAME_FILE, game.moves.empty? ? '' : game.pgn.to_s)
+
+          board_index = {
+            '8' => { 'a' => 56, 'b' => 57, 'c' => 58, 'd' => 59, 'e' => 60, 'f' => 61, 'g' => 62, 'h' => 63 },
+            '7' => { 'a' => 48, 'b' => 49, 'c' => 50, 'd' => 51, 'e' => 52, 'f' => 53, 'g' => 54, 'h' => 55 },
+            '6' => { 'a' => 40, 'b' => 41, 'c' => 42, 'd' => 43, 'e' => 44, 'f' => 45, 'g' => 46, 'h' => 47 },
+            '5' => { 'a' => 32, 'b' => 33, 'c' => 34, 'd' => 35, 'e' => 36, 'f' => 37, 'g' => 38, 'h' => 39 },
+            '4' => { 'a' => 24, 'b' => 25, 'c' => 26, 'd' => 27, 'e' => 28, 'f' => 29, 'g' => 30, 'h' => 31 },
+            '3' => { 'a' => 16, 'b' => 17, 'c' => 18, 'd' => 19, 'e' => 20, 'f' => 21, 'g' => 22, 'h' => 23 },
+            '2' => { 'a' => 8,  'b' => 9,  'c' => 10, 'd' => 11, 'e' => 12, 'f' => 13, 'g' => 14, 'h' => 15 },
+            '1' => { 'a' => 0,  'b' => 1,  'c' => 2,  'd' => 3,  'e' => 4,  'f' => 5,  'g' => 6,  'h' => 7 }
+          }
+
+          pieces = {
+            'P' => '♙', 'R' => '♖', 'N' => '♘', 'B' => '♗', 'Q' => '♕', 'K' => '♔',
+            'p' => '♟', 'r' => '♜', 'n' => '♞', 'b' => '♝', 'q' => '♛', 'k' => '♚',
+            'blank' => '·'
+          }
+
+          legal = []
+          squares = ('a'..'h').flat_map { |c| (1..8).map { |r| "#{c}#{r}" } }
+          squares.each do |from|
+            moves = []
+            squares.each do |to|
+              attempt = clone_game(game)
+              begin
+                attempt.move("#{from}#{to}")
+                moves << to
+              rescue Chess::IllegalMoveError
+              end
+            end
+            legal << { from: from, to: moves } unless moves.empty?
+          end
+
+          active = game.board.active_color ? 'BLACK (solid)' : 'WHITE (hollow)'
+          state = case game.status.to_s
+                  when 'in_progress' then 'Game is in progress.'
+                  when 'white_won' then 'Game won by white (hollow) with checkmate.'
+                  when 'black_won' then 'Game won by black (solid) with checkmate.'
+                  when 'stalemate' then 'Game ended in stalemate.'
+                  else 'Game finished.'
+                  end
+
+          section = []
+          section << "**#{state}** It's #{active} to move."
+          section << ''
+          section << '|   | A | B | C | D | E | F | G | H |'
+          section << '| - | - | - | - | - | - | - | - | - |'
+          (8).downto(1) do |row|
+            cells = ('a'..'h').map do |col|
+              piece = game.board[board_index[row.to_s][col]] || 'blank'
+              pieces[piece.to_s] || '·'
+            end
+            section << "| #{row} | #{cells.join(' | ')} |"
+          end
+
+          if game.over?
+            new_url = "https://github.com/#{REPO}/issues/new?title=chess%7Cnew&body=Just+click+%27Create+new+issue%27."
+            section << ''
+            section << "Start a new game: [Create issue](#{new_url})"
+          else
+            section << ''
+            section << "#### **#{active}:** choose your move"
+            section << ''
+            section << '| FROM | TO |'
+            section << '| ---- | -- |'
+            legal.each do |m|
+              links = m[:to].map do |to|
+                url = "https://github.com/#{REPO}/issues/new?title=chess%7Cmove%7C#{m[:from]}#{to}%7C#{game_id}&body=Just+click+%27Create+new+issue%27."
+                "[#{to.upcase}](#{url})"
+              end
+              section << "| **#{m[:from].upcase}** | #{links.join(' , ')} |"
+            end
+          end
+
+          section << ''
+          section << "Need a reset? [Start a new game](https://github.com/#{REPO}/issues/new?title=chess%7Cnew&body=Just+click+%27Create+new+issue%27.)"
+          section << ''
+          section << '**Last few moves**'
+          section << ''
+          section << '| Move | Who |'
+          section << '| ---- | --- |'
+          if File.exist?(RECENT_FILE) && !File.read(RECENT_FILE).strip.empty?
+            section.concat(File.readlines(RECENT_FILE, chomp: true).reject(&:empty?).first(5))
+          else
+            section << '| — | No moves yet |'
+          end
+          section << ''
+          section << '**Top players**'
+          section << ''
+          section << '| Moves | Who |'
+          section << '| ----- | --- |'
+          if File.exist?(LEADERBOARD_FILE) && !File.read(LEADERBOARD_FILE).strip.empty?
+            section.concat(File.readlines(LEADERBOARD_FILE, chomp: true).reject(&:empty?))
+          else
+            section << '| — | No data yet |'
+          end
+
+          readme = File.read('README.md')
+          replacement = "<!-- CHESS_START -->\n#{section.join("\n")}\n<!-- CHESS_END -->"
+          if readme.include?('<!-- CHESS_START -->') && readme.include?('<!-- CHESS_END -->')
+            readme = readme.gsub(/<!-- CHESS_START -->.*<!-- CHESS_END -->/m, replacement)
+          else
+            readme += "\n\n#{replacement}\n"
+          end
+          File.write('README.md', readme)
+
+          system('git', 'config', '--global', 'user.email', 'action@github.com', exception: true)
+          system('git', 'config', '--global', 'user.name', 'GitHub Action', exception: true)
+          system('git', 'add', 'README.md', GAME_DIR, exception: true)
+          unless system('git', 'diff', '--cached', '--quiet')
+            commit_msg = cmd == 'move' ? "chess: #{ISSUE_AUTHOR} #{move}" : "chess: #{ISSUE_AUTHOR} started new game"
+            system('git', 'commit', '-m', commit_msg, exception: true)
+            system('git', 'push', exception: true)
+          end
+
+          client.add_comment(REPO, ISSUE_NUMBER, "@#{ISSUE_AUTHOR} Done! Board updated in README.")
+          client.close_issue(REPO, ISSUE_NUMBER)
+          RUBY
